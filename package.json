@@ -1,0 +1,23 @@
+{
+  "name": "gep-javascript-2023",
+  "version": "1.0.0",
+  "description": "Repository used to store javascript code of study and research group of javascript at Unichristus.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profmauricioneto/gep-javascript-2023.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/profmauricioneto/gep-javascript-2023/issues"
+  },
+  "homepage": "https://github.com/profmauricioneto/gep-javascript-2023#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
