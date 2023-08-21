@@ -13,7 +13,7 @@ function resultStudent(grade1, grade2, grade3) {
       (parseFloat(grade1) + parseFloat(grade2) + parseFloat(grade3)) / 3;
     if (average >= 5.0) {
       return "Passed!";
-    } else {
+    } else {  
       return "Failed";
     }
   } else {

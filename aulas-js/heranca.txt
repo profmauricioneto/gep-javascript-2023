@@ -1,0 +1,12 @@
+Herança
+
+- Veiculo (características: numero_chassi, cor - Comportamento: acelerar(), frear())
+    - Carro (características_próprias: câmbio - Comportamento_próprio: alterar_marcha())
+    - Caminhao (características_próprias: freio_a_vácuo - Comportamento_próprio: descarregar_conteudo())
+
+
+Polimorfismo
+
+- Animal (características: tamanho - Comportamento: locomoção())
+    - Ser_Humano (locomoção())
+    - Pato (locomoção())
