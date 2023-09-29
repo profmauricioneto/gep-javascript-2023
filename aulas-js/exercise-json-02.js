@@ -19,6 +19,8 @@ function main() {
   console.log(stock);
   let productName = prompt("What product do you want to check? ");
   checkInventory(productName);
+  updateProductQuantity(productName);
+  console.log(stock);
 }
 
 // Check if the product is available
@@ -31,9 +33,15 @@ let checkInventory = (productName) => {
             } else {
                 console.log(`The product ${element.name} is not available.`);
             }
-        } else {
-            console.log(`The product ${element.name} is not available.`);
         }
+    });
+};
+
+let updateProductQuantity = (productName) => {
+    stock.forEach(element => {
+        if(element.name === productName) {
+            element.quantity = prompt('New quantity: ');
+        } 
     });
 };
 
