@@ -17,9 +17,9 @@ let calcularMedia = (notas) => {
     for(let i = 0; i < notas.length; i++){
         soma = soma + notas[i];
     }
-    // for(let item in notas) {
-    //     soma+=notas[item];
-    // }
+        // for(let item in notas) {
+        //     soma+=notas[item];
+        // }
     return soma / notas.length;
 };
 
