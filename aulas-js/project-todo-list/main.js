@@ -2,7 +2,6 @@
  * @author mauricio.moreira
  * @description program of to do list in execution
 */
-
 const prompt = require('prompt-sync')();
 const todolistoperations = require('./todolist');
 

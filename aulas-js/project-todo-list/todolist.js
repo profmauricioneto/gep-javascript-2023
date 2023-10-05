@@ -1,6 +1,12 @@
 /**
  * @author mauricio.moreira 
  * ? HOW CAN WE IMPROVE THIS CODE ?
+ * TODO: 1. Imprimir as tasks antes de deletar (e depois);
+ * TODO: 2. Imprimir as tasks de um usuários específico;
+ * TODO: 3. Criar uma propriedade ID no cadastro ou algo que seja uma chave única (CPF);
+ * TODO: 4. Criar uma função para alterar o status da task;
+ * TODO: (futuramente) - tornar a propriedade status como string (concluída, pendente, em andamento);
+ * TODO: Persistencia de dados (arquivo ou banco)
  */
 const prompt = require("prompt-sync")();
 
@@ -10,7 +16,7 @@ let registers = [];
  * @function 
  * @name findUser
  * @param nameUser
- * @description function responsable to find some user in the registerss
+ * @description function responsable to find some user in the registers
 */
 const findUser = (nameUser) => {
   let signal = false;
