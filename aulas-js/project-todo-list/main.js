@@ -11,7 +11,7 @@ const todolistoperations = require('./todolist');
 */
 function main() {
     let option;
-    let name;
+    let id;
     do{
         option = todolistoperations.menu();
         switch (option) {
@@ -19,22 +19,34 @@ function main() {
                 todolistoperations.userRegister();
                 break;
             case 2:
-                name = prompt("Digite o nome do usuário: ");
-                todolistoperations.addTask(name);
+                id = Number(prompt("Digite o ID do usuário: "));
+                todolistoperations.addTask(id);
                 break;
             case 3:
-                name = prompt("Digite o nome do usuário: ");
+                id = Number(prompt("Digite o ID do usuário: "));
                 index = Number(prompt("Digite o índice da tarefa: "));
-                todolistoperations.deleteTask(name, index);
+                todolistoperations.deleteTask(id, index);
                 break;
             case 4:
                 todolistoperations.listUsers();
+                break;
+            case 5:
+                id = Number(prompt("Digite o ID do usuário: "));
+                todolistoperations.showTasks(id);
+                break;
+            case 6: 
+                id = Number(prompt("Digite o ID do usuário: "));
+                index = Number(prompt("Digite o índice da tarefa: "));
+                todolistoperations.updateTask(id, index);
+                break;
+            case 7: 
+                console.log("Saindo...");
                 break;
             default:
                 console.log("Opção inválida!");
                 break;
         }
-    } while(option != 5);
+    } while(option != 7);
 }
 
 main();
