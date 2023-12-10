@@ -2,9 +2,10 @@
   "name": "gep-javascript-2023",
   "version": "1.0.0",
   "description": "Repository used to store javascript code of study and research group of javascript at Unichristus.",
-  "main": "index.js",
+  "main": "aulas-js/node/exercicio0/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon aulas-js/node/exercicio0/app.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,13 @@
   },
   "homepage": "https://github.com/profmauricioneto/gep-javascript-2023#readme",
   "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
     "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }
